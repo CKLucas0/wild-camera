@@ -1,4 +1,8 @@
-fetch("https://api.github.com/repos/CKLucas0/wild-camera/contents/images")
+const user = "CKLucas0";
+const repo = "wild-camera";
+const map = "images";
+
+fetch(`https://api.github.com/repos/${user}/${repo}/contents/${map}`)
   .then(res => {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return res.json();
