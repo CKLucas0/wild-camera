@@ -1,6 +1,6 @@
 const user = "CKLucas0";
 const repo = "wild-camera";
-const map = "images";
+const map = "wild-camera/images";
 
 fetch(`https://api.github.com/repos/${user}/${repo}/contents/${map}`)
   .then(res => {
